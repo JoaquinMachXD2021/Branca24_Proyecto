@@ -8,8 +8,24 @@
 
     </head>
     <boddy>
-        
+        <div class="login-from">
+            <h2>Panel de administración</h2>
+                <from> 
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Nombre de usuario">
 
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Contraseña">
+
+                    </div>
+
+                    <button type="submit"></button>
+
+                </from>
+        </div>
 
     </boddy>
 </html> 
