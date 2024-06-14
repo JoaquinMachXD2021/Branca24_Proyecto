@@ -2,8 +2,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-     <title>VaidrollTeamLogin6</title>
-     <link rel="stylesheet" href="vaidroll.css">	
+     <title>Panel de usuarios</title>
+     <link rel="stylesheet" href="./Admin_panel.css">	
 </head>
 <body>
   <div class="cajafuera" align="center">
@@ -33,7 +33,7 @@
 </form>
 </div>
 <div class="autor">
-© 2021 Formulario Login. Todos los derechos reservados | Diseño de VaidrollTeam  
+Todos los derechos reservados | © 2024 Branca Login
 <div>
 </div>
 </body>
