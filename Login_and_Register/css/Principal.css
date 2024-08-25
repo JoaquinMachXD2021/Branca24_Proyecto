@@ -1,0 +1,109 @@
+body {
+    /* Color fondo de pagina */
+    background-color: #2b2131;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #f58e18;
+    /* Cambia el color del título a rojo */
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.banner img {
+    width: 500px;
+    /* Cambia el ancho de la imagen */
+    height: auto;
+    /* Mantiene la proporción de aspecto */
+    display: block;
+    /* Permite centrar la imagen horizontalmente */
+    margin: 0 auto;
+    /* Centra la imagen horizontalmente */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.item {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.boton {
+    width: 100%;
+    padding: 10px;
+    background-color: #b43771b7;
+    border: none;
+    border-bottom: 1px solid #ce7500;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* Transición de color */
+    display: block;
+    /* Hacer que los botones sean elementos de bloque */
+    margin: 0;
+    /* Eliminar el margen */
+}
+
+.boton:hover,
+.boton:focus {
+    /* Estilos cuando se pasa el cursor o se selecciona */
+    background-color: #f58e18;
+}
+
+
+.menu {
+    display: none;
+    background-color: #f58e18;
+    position: absolute;
+    z-index: 1;
+}
+
+.boton:hover+.menu,
+.menu:hover {
+    display: block;
+}
+
+.menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #1a1a1a;
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #b43771b7;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer img {
+    width: 800px;
+    /* Cambia el ancho de la imagen */
+    height: auto;
+    /* Mantiene la proporción de aspecto */
+}
