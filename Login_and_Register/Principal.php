@@ -25,7 +25,9 @@
 </head>
 
 <body>
+    
     <a href="php/cerrar_sesion.php">Cerrar Sesión</a>
+
     <div class="container">
         <div class="header">
             <h1>Bienvenidos a</h1>

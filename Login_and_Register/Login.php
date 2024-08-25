@@ -7,7 +7,6 @@
 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -25,8 +24,7 @@
 <img src="./css/fondo1.jpg" alt="Imagen fondo" class="imagen_fondo">
 
 <body>
-
-        <main>
+    <main>
 
             <div class="contenedor__todo">
                 <div class="caja__trasera">
@@ -52,7 +50,7 @@
                         <button>Entrar</button>
                     </form>
 
-                    <!--Register-->
+                    <!--Registro-->
                     <form action="php/registro_usuario_be.php" method="POST" class="formulario__register">
                         <h2>Regístrarse</h2>
                         <input type="text" placeholder="Nombre completo" name = "nombre_completo">
@@ -66,6 +64,6 @@
 
         </main>
         <!--Enlace a Script.js-->
-        <script src="./js/script.js"></script>
+        <script src="./js/Mover.js"></script>
 </body>
 </html>

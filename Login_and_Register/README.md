@@ -1,2 +1,2 @@
 # Branca24_Proyecto
-Proyecto(HTML, CSS, JavaScript, Base de datos)
+Proyecto(HTML, CSS, JavaScript, PHP, Base de datos, Hosting Y Respaldo)

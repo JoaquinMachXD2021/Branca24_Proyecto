@@ -46,11 +46,13 @@ main {
 
 .imagen-superpuesta {
     position: absolute;
-    top: 50px;
-    left: 10px;
-    width: 400px;
+    top: 10%;
+    left: 5%;
+    width: 80%;
+    max-width: 400px;
     height: auto;
     z-index: 60;
+    object-fit: contain; /* Asegura que la imagen se ajuste sin distorsión */
 }
 
 .caja__trasera {

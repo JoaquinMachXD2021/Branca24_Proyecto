@@ -1,14 +1,16 @@
 <?php 
-    $conexion = mysqli_connect("127.0.0.1", "root", "", "login_register_db");
-    
-    /*
-    if($conexion){
-        echo 'Conectado exitosamente a la Base de Datos';
+    // Establecer parámetros de conexión
+    $host = "127.0.0.1";
+    $user = "root";
+    $password = "";
+    $dbname = "login_register_db";
 
-    }else{
-        echo 'No se ha podido conectar a la Base de Datos';
+    // Crear conexión
+    $conexion = mysqli_connect($host, $user, $password, $dbname);
+
+    // Verificar conexión
+    if (!$conexion) {
+        die("Error de conexión: " . mysqli_connect_error());
     }
-    */
-
-
+    echo "Conectado exitosamente a la Base de Datos";
 ?>
