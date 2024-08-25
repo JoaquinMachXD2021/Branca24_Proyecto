@@ -1,0 +1,156 @@
+/* Estilos para la barra lateral */
+body {
+    margin: 0;
+}
+
+.header {
+    background-color: #1f1f1f;
+    padding: 10px;
+}
+
+.logo img {
+    text-align: center;
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+}
+
+.BarraLateral {
+    position: fixed;
+    top: 0;
+    left: -180px;
+    width: 200px;
+    height: 100%;
+    background-color: #880d0d;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+    overflow: hidden;
+    transition: left 0.5s ease;
+}
+
+.BarraLateral:hover {
+    left: 0;
+    background-color: #1f1f1f;
+}
+
+.BarraLateral:hover,
+.BarraLateral:hover ul {
+    transition-delay: 0s;
+}
+
+.BarraLateral ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10%;
+    font-size: 20px; /* Aumento del tamaño de la fuente */
+}
+
+.BarraLateral li {
+    text-align: left;
+    padding: 15px 10px; /* Aumento del espacio alrededor del texto e icono */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #d9dbe0;
+    border: 2px solid transparent; /* Agrego un borde inicialmente transparente */
+    transition: all 300ms ease; /* Transición para el efecto hover */
+}
+
+.BarraLateral li:hover {
+    background-color: #d9534f; /* Color rojo cuando se pasa el mouse */
+    border-color: #c9302c; /* Cambia el color del borde al pasar el mouse */
+}
+
+.BarraLateral a {
+    color: white;
+    text-decoration: none;
+}
+
+.capa {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    display: none;
+}
+
+.header,
+.ContenidoPrincipal {
+    transition: margin-left 0.3s ease;
+    /*background-color: #1f1f1f;*/
+    color: #c7c7c7;
+}
+
+.btn-menu {
+    cursor: pointer;
+}
+
+.container-menu {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: -250px;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+#btn-menu:checked ~ .container-menu {
+    opacity: 1;
+    visibility: visible;
+    left: 0;
+}
+
+.cont-menu {
+    width: 100%;
+    max-width: 250px;
+    background: #1c1c1c;
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+}
+
+#btn-menu:checked ~ .container-menu .cont-menu {
+    transform: translateX(0%);
+}
+
+.cont-menu nav {
+    transform: translateY(15%);
+}
+
+.cont-menu nav a {
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #c7c7c7;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+
+.cont-menu nav a:hover {
+    border-left: 5px solid #c7c7c7;
+    background: #1f1f1f;
+}
+
+.cont-menu label {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.ContenidoPrincipal {
+    margin-left: 0;
+    transition: margin-left 0.3s ease;
+}
+
+.capainvisible {
+    display: none;
+}

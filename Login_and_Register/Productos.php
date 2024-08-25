@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comercio - Productos</title>
+    <title>Branca24hs</title>
+    <link rel="icon" href="../FaviBranca24.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>

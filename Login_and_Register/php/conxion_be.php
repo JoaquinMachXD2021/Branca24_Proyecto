@@ -3,7 +3,7 @@
     $host = "127.0.0.1";
     $user = "root";
     $password = "";
-    $dbname = "login_register_db";
+    $dbname = "empresa_b24";
 
     // Crear conexión
     $conexion = mysqli_connect($host, $user, $password, $dbname);
