@@ -6,6 +6,7 @@ $nombre_completo = $_POST['nombre_completo'];
 $correo = $_POST['correo'];
 $usuario = $_POST['usuario'];
 $contrasena = $_POST['contrasena'];
+$rol = 'usuario'; // Asignar rol por defecto
 
 // Encriptar la contraseña usando password_hash()
 $contrasena_encrip = password_hash($contrasena, PASSWORD_BCRYPT);
@@ -48,8 +49,8 @@ if (strlen($contrasena) < 8) {
 }
 
 // Inserción en la base de datos
-$registroA = "INSERT INTO usuarios(nombre_completo, correo, usuario, contrasena) 
-            VALUES('$nombre_completo', '$correo', '$usuario', '$contrasena_encrip')";
+$registroA = "INSERT INTO usuarios(nombre_completo, correo, usuario, rol , contrasena) 
+            VALUES('$nombre_completo', '$correo', '$usuario', '$rol', '$contrasena_encrip')";
 
 $ejecutar = mysqli_query($conexion, $registroA);
 
