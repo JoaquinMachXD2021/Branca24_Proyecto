@@ -22,7 +22,7 @@
     <title>Prueba Principal</title>
 </head>
 <body>
-    <h1>Bienvenido a mi mundo!</h1>
+    <h1>Inicio de Branca24hs</h1>
     <a href="php/cerrar_sesion.php">Cerrar Sesión</a>
 </body>
 </html>
