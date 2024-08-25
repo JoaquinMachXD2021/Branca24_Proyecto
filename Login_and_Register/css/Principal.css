@@ -1,17 +1,57 @@
+/* Estilos generales */
 body {
-    /* Color fondo de pagina */
-    background-color: #2b2131;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
 
+/* Estilos del título */
 h1 {
-    color: #f58e18;
-    /* Cambia el color del título a rojo */
+    color: #f58e18; /* Color del título */
 }
 
+/* Carrusel de imágenes */
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
 
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Estilos de promociones */
+.promotions {
+    padding: 20px;
+    background-color: #b43771; /* Fondo en morado */
+}
+
+.promotions h2 {
+    color: #fff; /* Color del título de promociones */
+}
+
+.promotion-item {
+    margin-bottom: 20px;
+}
+
+.promotion-item img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilos del contenedor principal */
 .container {
     width: 80%;
     margin: 0 auto;
@@ -24,22 +64,18 @@ h1 {
 }
 
 .banner img {
-    width: 500px;
-    /* Cambia el ancho de la imagen */
+    width: 100%;
     height: auto;
-    /* Mantiene la proporción de aspecto */
     display: block;
-    /* Permite centrar la imagen horizontalmente */
     margin: 0 auto;
-    /* Centra la imagen horizontalmente */
 }
 
+/* Estilos de los productos */
 .content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
-
 
 .item {
     width: calc(33.33% - 20px);
@@ -52,34 +88,28 @@ h1 {
 .boton {
     width: 100%;
     padding: 10px;
-    background-color: #b43771b7;
+    background-color: #b43771; /* Fondo en morado */
     border: none;
-    border-bottom: 1px solid #ce7500;
+    border-bottom: 1px solid #f58e18; /* Línea inferior en rojo */
     text-align: left;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    /* Transición de color */
-    display: block;
-    /* Hacer que los botones sean elementos de bloque */
-    margin: 0;
-    /* Eliminar el margen */
 }
 
 .boton:hover,
 .boton:focus {
-    /* Estilos cuando se pasa el cursor o se selecciona */
-    background-color: #f58e18;
+    background-color: #f58e18; /* Fondo en rojo al pasar el cursor */
+    color: #fff; /* Texto blanco al pasar el cursor */
 }
-
 
 .menu {
     display: none;
-    background-color: #f58e18;
+    background-color: #f58e18; /* Fondo en rojo */
     position: absolute;
     z-index: 1;
 }
 
-.boton:hover+.menu,
+.boton:hover + .menu,
 .menu:hover {
     display: block;
 }
@@ -93,17 +123,68 @@ h1 {
 }
 
 .menu a:hover {
-    background-color: #b43771b7;
+    background-color: #b43771; /* Fondo en morado al pasar el cursor */
+    color: #fff; /* Texto blanco al pasar el cursor */
 }
 
+/* Estilos del footer */
 .footer {
     text-align: center;
     margin-top: 20px;
+    padding: 20px;
+    background-color: #2b2131; /* Fondo del footer */
+    color: #fff; /* Texto blanco */
 }
 
 .footer img {
-    width: 800px;
-    /* Cambia el ancho de la imagen */
+    width: 100%;
     height: auto;
-    /* Mantiene la proporción de aspecto */
+    max-width: 800px; /* Limita el ancho máximo de la imagen del footer */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+/* Estilos del formulario de login y registro */
+.formulario__login,
+.formulario__register {
+    background-color: #fff; /* Fondo blanco para los formularios */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.formulario__login h2,
+.formulario__register h2 {
+    color: #f58e18; /* Color del título en los formularios */
+}
+
+.formulario__login input,
+.formulario__register input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.formulario__login button,
+.formulario__register button {
+    width: 100%;
+    padding: 10px;
+    background-color: #b43771; /* Fondo morado para los botones */
+    border: none;
+    border-radius: 5px;
+    color: #fff; /* Texto blanco en los botones */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario__login button:hover,
+.formulario__register button:hover {
+    background-color: #f58e18; /* Fondo rojo al pasar el cursor */
+}
+
+/* Estilos adicionales para mejorar la presentación */
+.promotions img {
+    border-radius: 10px; /* Bordes redondeados para las imágenes de promociones */
 }

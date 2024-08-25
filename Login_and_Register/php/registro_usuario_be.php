@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 include './conxion_be.php';
 
 $nombre_completo = $_POST['nombre_completo'];
@@ -7,8 +7,8 @@ $correo = $_POST['correo'];
 $usuario = $_POST['usuario'];
 $contrasena = $_POST['contrasena'];
 
-// Encriptar la contraseña
-$contrasena_encrip = hash('sha512', $contrasena);
+// Encriptar la contraseña usando password_hash()
+$contrasena_encrip = password_hash($contrasena, PASSWORD_BCRYPT);
 
 // Verificar que el correo no se repita en la base de datos
 $verificar_correo = mysqli_query($conexion, "SELECT * FROM usuarios WHERE correo='$correo'");
@@ -67,5 +67,4 @@ if ($ejecutar) {
 }
 
 mysqli_close($conexion);
-
 ?>

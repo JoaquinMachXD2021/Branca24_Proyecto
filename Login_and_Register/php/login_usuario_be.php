@@ -5,24 +5,21 @@ include './conxion_be.php';
 $correo = $_POST['correo'];
 $contrasena = $_POST['contrasena'];
 
-// Encriptar la contraseña ingresada
-$contrasena_encrip = hash('sha512', $contrasena);
+// Consultar la contraseña encriptada desde la base de datos
+$validar_login = mysqli_query($conexion, "SELECT contrasena FROM usuarios WHERE correo='$correo'");
+$usuario = mysqli_fetch_assoc($validar_login);
 
-// Validar el login comparando la contraseña encriptada
-$validar_login = mysqli_query($conexion, "SELECT * FROM usuarios WHERE correo='$correo' and contrasena='$contrasena_encrip'");
-
-if (mysqli_num_rows($validar_login) > 0) {
+if ($usuario && password_verify($contrasena, $usuario['contrasena'])) {
     $_SESSION['usuario'] = $correo;
-    header("location: ../Principal.php");
-    exit;
-
+    header("Location: Principal.php");
+    exit();
 } else {
     echo '
         <script>
-            alert("Usuario no existe, por favor verifique los datos introducidos");
-            window.location = "../Login.php";
+            alert("Usuario no existe o la contraseña es incorrecta, por favor verifique los datos introducidos");
+            window.location = "Login.php";
         </script>
     ';
-    exit;
+    exit();
 }
 ?>

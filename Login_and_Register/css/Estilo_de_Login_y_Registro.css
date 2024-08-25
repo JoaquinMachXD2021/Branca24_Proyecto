@@ -11,20 +11,21 @@ html, body {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
     position: relative;
-    overflow: hidden;
-    margin-top: 50px;
 }
 
 main {
+    flex: 1;
     width: 100%;
     padding: 20px;
     margin: 50px auto 0;
 }
-
 
 .contenedor__todo {
     width: 100%;
@@ -33,7 +34,7 @@ main {
     position: relative;
     padding-top: 20px;
 }
-
+    /* Configuracion de imágenes */
 .imagen_fondo {
     position: absolute;
     top: -10%;
@@ -46,15 +47,15 @@ main {
 
 .imagen-superpuesta {
     position: absolute;
-    top: 10%;
-    left: 5%;
-    width: 80%;
+    left: 0;
+    top: 0;
+    z-index: 60;
+    object-fit: contain;
+    transition: width 0.3s ease, height 0.3s ease;
     max-width: 400px;
     height: auto;
-    z-index: 60;
-    object-fit: contain; /* Asegura que la imagen se ajuste sin distorsión */
 }
-
+    /* Configuracion de cajas */
 .caja__trasera {
     width: 100%;
     padding: 10px 20px;
@@ -103,7 +104,7 @@ main {
     color: #7e1ecc;
 }
 
-/* Formularios */
+/* Contenedores */
 
 .contenedor__login-register {
     display: flex;
@@ -111,11 +112,10 @@ main {
     width: 100%;
     max-width: 380px;
     position: relative;
-    top: -185px; /* Valor anterior restaurado */
+    top: -185px;
     left: 10px;
     transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
 }
-
 
 .contenedor__login-register form {
     width: 100%;
@@ -191,4 +191,21 @@ main {
     .contenedor__login-register form {
         position: relative;
     }
+}
+    /* Final de página */
+.footer {
+    width: 100%;
+    padding: 20px;
+    background-color: #7e1ecc;
+    color: white;
+    text-align: center;
+}
+.footer img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.footer p {
+    font-size: 14px;
+    font-weight: 300;
 }

@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
 
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./css/Estilo_de_Login_y_Registro.css">
 </head>
 
 <img src="./css/inicio.jpg" alt="Imagen sobrepuesta" class="imagen-superpuesta">
@@ -63,7 +63,11 @@
             </div>
 
         </main>
-        <!--Enlace a Script.js-->
-        <script src="./js/Mover.js"></script>
+        <!-- Footer -->
+    <div class="footer">
+        <p>© Branca 24hs. Todos los derechos reservados.</p>
+    </div>
+
+    <script src="./js/Mover_Login_Y_Registro.js"></script>
 </body>
 </html>
