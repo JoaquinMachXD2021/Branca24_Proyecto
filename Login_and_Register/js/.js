@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var botones = document.querySelectorAll('.boton');
     var menus = document.querySelectorAll('.menu');
 
-    // sobre cada botón
+    // Sobre cada botón
     botones.forEach(function (boton, index) {
         // (pasar el cursor por encima)
         boton.addEventListener('mouseover', function () {
