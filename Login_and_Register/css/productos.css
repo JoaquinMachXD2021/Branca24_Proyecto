@@ -3,31 +3,45 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-gap: 20px;
+    padding: 20px;
+    background-color: #000; /* Fondo negro para la sección de productos */
 }
 
 .producto {
-    border: 1px solid #ccc;
+    border: 1px solid #fff; /* Borde blanco */
     padding: 10px;
+    background-color: #333; /* Fondo oscuro para los productos */
+    border-radius: 10px; /* Bordes redondeados */
+    color: #fff; /* Texto blanco */
 }
 
 .producto img {
     max-width: 100%;
     height: auto;
+    border-radius: 5px; /* Bordes redondeados para las imágenes de productos */
 }
 
 .producto h3 {
     margin-top: 0;
+    color: #fff; /* Texto blanco para los títulos de productos */
 }
 
 .producto p {
     margin-bottom: 0;
+    color: #ddd; /* Texto blanco-grisáceo para las descripciones */
 }
 
 .btn-agregar {
-    background-color: #333;
-    color: #fff;
+    background-color: #481379; /* Fondo morado oscuro */
+    color: #fff; /* Texto blanco */
     border: none;
     padding: 5px 10px;
     cursor: pointer;
     margin-top: 10px;
+    border-radius: 5px; /* Bordes redondeados para el botón */
+    transition: background-color 0.3s ease;
+}
+
+.btn-agregar:hover {
+    background-color: #61178b; /* Morado más claro al pasar el cursor */
 }

@@ -1,8 +1,15 @@
-/* Estilos para la barra lateral */
+/* Variables CSS para el tamaño de las imágenes */
+:root {
+    --logo-width: 500px; /* Tamaño del logo */
+    --barra-lateral-img-width: 200px; /* Tamaño de las imágenes en la barra lateral */
+}
+
+/* Estilos generales */
 body {
     margin: 0;
 }
 
+/* Estilos del logo en el header */
 .header {
     background-color: #1f1f1f;
     padding: 10px;
@@ -10,11 +17,12 @@ body {
 
 .logo img {
     text-align: center;
-    width: 500px;
+    width: var(--logo-width); /* Utiliza la variable para el tamaño del logo */
     max-width: 100%;
     height: auto;
 }
 
+/* Estilos para la barra lateral */
 .BarraLateral {
     position: fixed;
     top: 0;
@@ -65,6 +73,13 @@ body {
     text-decoration: none;
 }
 
+.BarraLateral img {
+    width: var(--barra-lateral-img-width); /* Utiliza la variable para el tamaño de las imágenes en la barra lateral */
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo de capa de fondo */
 .capa {
     position: fixed;
     top: 0;
@@ -75,10 +90,10 @@ body {
     display: none;
 }
 
+/* Estilos del menú */
 .header,
 .ContenidoPrincipal {
     transition: margin-left 0.3s ease;
-    /*background-color: #1f1f1f;*/
     color: #c7c7c7;
 }
 
