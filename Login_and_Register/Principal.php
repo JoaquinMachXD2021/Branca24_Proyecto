@@ -24,14 +24,13 @@
     <link rel="stylesheet" href="./css/Principal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <a href="php/cerrar_sesion.php">Cerrar Sesión</a>
 </head>
 
 
 
 <body>
     <main>
-        <a href="php/cerrar_sesion.php">Cerrar Sesión</a>
-
         <div class="container">
             <div class="header">
                 <h1>Bienvenidos a Branca 24hs</h1>
