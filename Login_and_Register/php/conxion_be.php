@@ -5,12 +5,16 @@
     $password = "";
     $dbname = "empresa_b24";
 
+    define('ADMIN_ROL_ID','administrador');
+    define('USER_ROL_ID','usuario');
+
     // Crear conexión
     $conexion = mysqli_connect($host, $user, $password, $dbname);
 
-    // Verificar conexión
-    // if (!$conexion) {
-    //     die("Error de conexión: " . mysqli_connect_error());
-    // }
-    // echo "Conectado exitosamente a la Base de Datos";
+    if (!$conexion) 
+    {
+    die("Error en la conexión: " . mysqli_connect_error());
+    }
+
+    session_start();
 ?>
